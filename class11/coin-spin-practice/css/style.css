@@ -1,0 +1,39 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+h1{
+  text-align: center;
+}
+section{
+  width: 500px;
+  margin: 20px auto;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@keyframes  coinGoSpinnnn {
+  0% {
+    transform: rotateY(0deg)
+  }
+  50% {
+    transform: rotateY(180deg)
+  }
+  100% {
+    transform: rotateY(360deg)
+  }
+}
+
+.spin{
+
+  animation-name: coinGoSpinnnn;
+
+  animation-iteration-count: infinite;
+
+  animation-duration: 500ms;
+
+  animation-timing-function: linear;
+
+  animation-play-state: running;
+}

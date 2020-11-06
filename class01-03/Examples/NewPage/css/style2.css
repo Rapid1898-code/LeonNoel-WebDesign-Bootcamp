@@ -1,0 +1,176 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clear {
+	clear: both;
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+     min-height: 1000px;
+     background-image: url("images/technikhilfe-background.jpg");
+}
+
+.job_home {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    float: left;
+    max-width: 600px;
+    background: #000;
+}
+
+/* show photo from tile */
+.job_home img {
+    max-width: 100%;
+    vertical-align: middle;
+    opacity: 1;
+}
+
+article {
+    display: block;
+}
+
+.job_home h2 {
+    font-size: 46px;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    opacity: 0;
+}
+
+.job_home a {color: whitesmoke;}
+
+/* show name from tile when hovering */
+.job_home a:hover h2 {
+     opacity:1;
+}
+
+/* change opacity when hovering over the tile */
+.job_home a:hover img {
+     opacity:0.2;
+}
+
+.job_home h2 {
+     font-size:46px;
+     text-transform:uppercase;
+     position:absolute;
+     z-index:10;
+     left:0;
+     top:45%;
+     width:100%; opacity:0;}
+
+@media only screen and (min-width: 1800px) {
+  .job_home {width: 25%;}
+}
+/* Screen 1800 */
+@media only screen and (min-width: 1200px) and (max-width: 1800px) {
+.job_home {width: 33.3333333%;}
+}
+/* Screen 1200 */
+@media only screen and (max-width: 1200px) {
+.job_home {width: 50%;}
+}
+/* Screen 1024 */
+@media only screen and (max-width: 1024px) {
+#hat #logo {margin-left: 20px; width: 300px;}
+#hat #primary_nav {right: 20px; top:48px;}
+.slot .title_section {font-size: 40px; margin-top: 0;}
+#hat #my_logo {background:url(../img/freedance_logo_little.png) no-repeat 0 50%; padding-left: 60px; height: 70px;}
+#allsize li#medium {opacity: 1;}
+#allsize li#large {opacity: 0.2;}
+/* Typografy 1024 */
+#hat #my_logo, #primary_nav li {font-size: 12px;}
+.slot .primaty_text, .title_slot {font-size: 21px; line-height: 30px;}
+/* Lavori 1024 */
+body .nav_portfolio_item {margin-right: 200px;}
+}
+@media only screen and (max-width: 768px) {
+  /* Screen 768 */
+  body #hat {padding-bottom: 40px;}
+  #hat #logo {width: 50px; height: 65px; position:relative; margin: 0 auto; margin-bottom: 20px;}
+  #hat #my_logo {padding-top: 10px; padding-left: 0;}
+  #hat #my_logo span {visibility:hidden;}
+  #hat #primary_nav {position:relative; top: 0; right: 10px;}
+  #hat #my_logo, #primary_nav li {font-size: 14px;}
+  footer #social li {margin-left: 5px;}
+  /* Content */
+  .content_center {text-align:center;}
+  .slot .title_section {font-size: 30px;}
+  .slot .primaty_text {font-size: 16px; line-height: 26px; width: 96%; margin: 20px auto;}
+  .slot .job_home h2 {font-size: 30px;}
+  /* Footer */
+  footer #social {font-size: 10px; width: 50%;}
+  footer #social ul {text-align: left;}
+  /* Expertise */
+  .slot .list_expertise li {margin: 5px 18px; font-size: 14px;}
+  body #first_slot {padding-bottom: 30px;}
+  body #first_slot h3, #design h3, #responsive h3 {font-size: 18px; line-height: 30px;}
+  /* Lavori */
+  body #first_slot.lavori {padding-bottom: 0;}
+  body .nav_portfolio_item {margin-right: 100px;}
+}
+@media only screen and (max-width: 640px) {
+  /* Screen 640 */
+  body footer {height: 100px;}
+  footer #social {float:none; width: 100%;}
+  footer #social p, #social ul, #allsize p {float: none; display: inline;}
+  #allsize #size {float: none; margin: 10px auto;}
+  #allsize li#small {opacity: 1;}
+  #allsize li#medium {opacity: 0.2;}
+  /* Lavori */
+  body .nav_portfolio_item {margin-right: 50px; font-size: 14px; font-weight: 400;}
+}
+@media only screen and (max-width: 600px) {
+  /* Screen 600 */
+  .job_home {width: 100%;}
+  /* Typography */
+  .slot .primary_text {font-size: 14px; padding: 0 14px; line-height: 30px;}
+  /* Expertise */
+  body #first_slot h3, #design h3, #responsive h3 {font-size: 14px; line-height: 26px;}
+  .slot .list_expertise li {margin: 5px 14px;font-size: 12px;}
+  /* Lavori */
+  #slot_job #container_img_slide {height: 200px;}
+  #slot_job #name_job {font-size: 20px; top:45%;}
+}
+@media only screen and (max-width: 415px) {
+  /* Screen 415 */
+  #hat #primary_nav {right: 0;}
+  #hat #primary_nav li {font-size: 13px; margin-left: 10px;}
+  /* Lavori */
+  body .nav_portfolio_item {margin-right: 30px; font-size: 12px; font-weight: 400;}
+  #slot_job #container_img_slide {height: 150px;}
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+}
+footer {
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

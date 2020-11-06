@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+header, footer {
+    border: 1px solid #000000;
+    text-align: center;
+    height: 100px;
+    clear: both;
+}
+
+section.row1 {
+    border: 1px solid #000000;
+    text-align: center;
+    float:left;
+	width: 33.3333%;
+    height: 175px;
+}
+
+section.row2 {
+    border: 1px solid #000000;
+    text-align: center;
+    float:left;
+	width: 50%;
+    height: 200px;
+}

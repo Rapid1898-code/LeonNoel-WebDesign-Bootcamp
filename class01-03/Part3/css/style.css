@@ -1,0 +1,49 @@
+.selected {
+	color: #ffffff;
+}
+
+div {
+	border: 5px solid #00cb4a;
+}
+
+body {
+	background-color: #78cee9;
+}
+
+h1 {
+	color: #ffffff;
+	text-align: center;
+	font-size: 45px;
+	font_weight: bold;
+  	font-style: italic;
+}
+
+h2 {
+	color: #ffffff;
+	font_weight: bold;
+}
+
+ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+li {
+    display: inline;
+}
+
+p {
+	color: #ffffff;
+}
+
+a {
+	font_weight: bold;
+	color: #00cb4a;
+}
+
+img {
+	max-width:20%;
+	max-height:20%;
+}
+
+
